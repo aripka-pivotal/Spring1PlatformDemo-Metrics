@@ -1,3 +1,12 @@
 [submodule "quotes-service"]
 	path = quotes-service
 	url = https://github.com/aripka-pivotal/quotes-service.git
+[submodule "portfolio-service"]
+	path = portfolio-service
+	url = https://github.com/aripka-pivotal/portfolio-service.git
+[submodule "accounts-service"]
+	path = accounts-service
+	url = https://github.com/aripka-pivotal/accounts-service.git
+[submodule "web-ui"]
+	path = web-ui
+	url = https://github.com/aripka-pivotal/web-ui.git

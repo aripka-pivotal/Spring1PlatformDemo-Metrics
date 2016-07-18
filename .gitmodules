@@ -1,0 +1,3 @@
+[submodule "quotes-service"]
+	path = quotes-service
+	url = https://github.com/aripka-pivotal/quotes-service.git

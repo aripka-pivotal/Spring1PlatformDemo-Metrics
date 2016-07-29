@@ -1,0 +1,12 @@
+applications:
+- name: port-load
+  instances: 1
+  memory: 1024M
+  disk_quota: 1024M
+  no-route: true
+  health-check-type: none
+  buildpack: https://github.com/aripka-pivotal/cf-buildpack-jmeter
+  stack: cflinuxfs2
+  env:
+    LOAD_SCRIPT: portfolio-load.jmx
+    TEST_URL: portfolio-s1p12.cfapps.io

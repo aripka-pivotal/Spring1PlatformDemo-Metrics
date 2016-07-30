@@ -54,3 +54,5 @@ LOAD_SCRIPT - the jmeter script to use
 TEST_URL - the µService path (e.g - webtrader-s1p12.cfapps.io)
 
 These are defined in the manifest files that can be updated for specfic deployments
+
+To push to cloud foundry navigate to the loadscripts directory (the artifact is all the files in the directory) 

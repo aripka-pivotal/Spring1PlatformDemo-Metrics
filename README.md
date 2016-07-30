@@ -22,7 +22,7 @@ Create the following Services
 '{\"count\":1,\"git\":{\"uri\":\"https://github.com/pivotal-bank/cf-SpringBootTrader-config.git\"}}'
 ```
 
-**Deploy µServices **
+**Deploy µServices**
 
 checkout and build each submodule 
 

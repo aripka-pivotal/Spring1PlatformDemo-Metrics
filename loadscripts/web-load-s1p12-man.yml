@@ -1,5 +1,6 @@
 applications:
-- instances: 1
+- name: zload-web
+  instances: 1
   memory: 1024M
   disk_quota: 1024M
   no-route: true
@@ -7,5 +8,5 @@ applications:
   buildpack: https://github.com/aripka-pivotal/cf-buildpack-jmeter
   stack: cflinuxfs2
   env:
-    LOAD_SCRIPT: ExcersiseWebTrader.jmx
+    LOAD_SCRIPT: web-load.jmx
     TEST_URL: webtrader-s1p12.cfapps.io

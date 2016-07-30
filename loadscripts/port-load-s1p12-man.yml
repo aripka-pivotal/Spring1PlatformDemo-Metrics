@@ -1,5 +1,5 @@
 applications:
-- name: port-load
+- name: zload-port
   instances: 1
   memory: 1024M
   disk_quota: 1024M

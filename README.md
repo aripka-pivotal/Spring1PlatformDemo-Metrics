@@ -11,7 +11,7 @@ Create the following Services
  Service Type | Service Name | Service Plan | Name 
  --- | --- | --- | --- 
  New Relic Service | newrelic | standard | new-rel-service 
- Config Server | p-config-server - standard | config-server**
+ Config Server | p-config-server | standard | config-server**
  Service Registry | p-service-registry | standard | discovery-service
  Circuit Breaker Dashboard | p-circuit-breaker-dashboard | standard | circuit-breaker-dashboard
  Database | cleardb | spark | traderdb 

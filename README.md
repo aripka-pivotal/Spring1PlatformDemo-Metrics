@@ -30,8 +30,27 @@ checkout and build each submodule
 ./gradlew clean assemble
 ```
 
-Push each application (update host as necessary either in push command or in manifest as noted above
+Push each µService (update host as necessary either in push command or in manifest as noted above) in the following order
+
+1. quotes-service
+2. accounts-service
+3. portfolio-service
+4. web-ui
 
 ```
 cf p -f build/manifest.yml
 ```
+
+**Data Setup**
+
+The µServices requiring test data (accounts and portfolio) include scripts that initialize the database with the test data on first database connect
+
+**Providing Application Load for Metrics**
+
+Jmeter load scripts are included in the loadscripts directory.  These scripts can be deployed using a jmeter buildpack which will containerize and run them in headless mode (see - https://github.com/aripka-pivotal/cf-buildpack-jmeter).
+
+The buildpack uses the environment variables TEST_URL and LOAD_SCRIPT
+LOAD_SCRIPT - the jmeter script to use
+TEST_URL - the µService path (e.g - webtrader-s1p12.cfapps.io)
+
+These are defined in the manifest files that can be updated for specfic deployments

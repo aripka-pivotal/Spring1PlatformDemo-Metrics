@@ -19,7 +19,7 @@ Create the following Services
 ** configure the service with -c and the following json
 
 ```
-'{\"count\":1,\"git\":{\"uri\":\"https://github.com/pivotal-bank/cf-SpringBootTrader-config.git\"}}'
+'{\"count":1,"git":{"uri":"https://github.com/pivotal-bank/cf-SpringBootTrader-config.git"}}'
 ```
 
 **Deploy µServices**

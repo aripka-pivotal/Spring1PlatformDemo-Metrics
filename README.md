@@ -1,10 +1,10 @@
 # Spring1PlatformDemo-Metrics
 
-Demo project used to demonstrate PCF metrics and New Relic integration.
+Demo project used to demonstrate PCF metrics and New Relic integration.  Originally a copy of code from this project https://github.com/pivotal-bank/cf-SpringBootTrader.  Some slight variation added to support desire to load app for metrics.
 
-Each submodule projects manifest-unversioned.yml file should be updated to change the host to be the space that the demo would be run in &lt;&lt;submodule&gt;&gt;-&lt;&lt;space&gt;&gt; e.g. quotes-s1p12
+Each submodule projects manifest-unversioned.yml file should be updated to change the host to be the space that the demo would be run in &lt;&lt;submodule&gt;&gt;-&lt;&lt;space&gt;&gt; e.g. quotes-s1p12.  See [Deploy µServices](#Deploy-µServices) section below for more details
 
-**Deploying the Application**
+#Deploying the Application
 
 Create the following Services
 
@@ -22,7 +22,7 @@ Create the following Services
 '{\"count":1,"git":{"uri":"https://github.com/pivotal-bank/cf-SpringBootTrader-config.git"}}'
 ```
 
-**Deploy µServices**
+##Deploy µServices
 
 checkout and build each submodule 
 
@@ -41,7 +41,7 @@ Push each µService (update host as necessary either in push command or in manif
 cf p -f build/manifest.yml
 ```
 
-**Data Setup**
+##Data Setup
 
 The µServices requiring test data (accounts and portfolio) include scripts that initialize the database with the test data on first database connect
 

@@ -4,6 +4,15 @@ Demo project used to demonstrate PCF metrics and New Relic integration.  Origina
 
 Each submodule projects manifest-unversioned.yml file should be updated to change the host to be the space that the demo would be run in &lt;&lt;submodule&gt;&gt;-&lt;&lt;space&gt;&gt; e.g. quotes-s1p12.  See **Deploy µServices** section below for more details
 
+#How to Use this Demo
+
+This demo provides a means to deploy the Spring Trader µServices Application and place load on it so that the automatically included PCF Metrics features can be show from the Apps Manager.  
+
+Addtionally, the deployment described allows for APM integration via service binding/Java Buildpack.  (In this case the PWS New Relic service) 
+
+Typically it is best to pre deploy the application to ensure there are no metrics streaming delays during a live demo. (Especially from APM solutions) 
+
+
 #Deploying the Application
 
 Create the following Services

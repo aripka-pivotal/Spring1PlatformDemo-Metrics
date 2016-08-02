@@ -2,7 +2,7 @@
 
 Demo project used to demonstrate PCF metrics and New Relic integration.  Originally a copy of code from this project https://github.com/pivotal-bank/cf-SpringBootTrader.  Some slight variation added to support desire to load app for metrics.
 
-Each submodule projects manifest-unversioned.yml file should be updated to change the host to be the space that the demo would be run in &lt;&lt;submodule&gt;&gt;-&lt;&lt;space&gt;&gt; e.g. quotes-s1p12.  See [Deploy µServices](#Deploy-µServices) section below for more details
+Each submodule projects manifest-unversioned.yml file should be updated to change the host to be the space that the demo would be run in &lt;&lt;submodule&gt;&gt;-&lt;&lt;space&gt;&gt; e.g. quotes-s1p12.  See **Deploy µServices** section below for more details
 
 #Deploying the Application
 

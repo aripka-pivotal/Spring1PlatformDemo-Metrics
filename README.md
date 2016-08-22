@@ -19,16 +19,17 @@ Create the following Services
 
  Service Type | Service Name | Service Plan | Name 
  --- | --- | --- | --- 
- New Relic Service | newrelic | standard | new-rel-service 
+ New Relic Service (PWS only) | newrelic | standard | new-rel-service 
  Config Server | p-config-server | standard | config-server**
  Service Registry | p-service-registry | standard | discovery-service
  Circuit Breaker Dashboard | p-circuit-breaker-dashboard | standard | circuit-breaker-dashboard
- Database | cleardb | spark | traderdb 
+ Database-PWS | cleardb | spark | traderdb 
+ Database-PCF | p-mysql | 100mb-dev | traderdb 
 
 ** configure the service with -c and the following json
 
 ```
-'{\"count":1,"git":{"uri":"https://github.com/pivotal-bank/cf-SpringBootTrader-config.git"}}'
+'{"count":1,"git":{"uri":"https://github.com/pivotal-bank/cf-SpringBootTrader-config.git"}}'
 ```
 
 ##Deploy µServices
@@ -40,6 +41,12 @@ checkout and build each submodule
 ```
 
 Push each µService (update host as necessary either in push command or in manifest as noted above) in the following order
+
+(Note in a PCF environment you will need to execute the following prior to staging, or restaging, in order to connect to Spring Cloud Services)
+
+```
+cf set-env <<appname>> CF_TARGET https://<<apiendpoint.yourdomain.com>>
+```
 
 1. quotes-service
 2. accounts-service

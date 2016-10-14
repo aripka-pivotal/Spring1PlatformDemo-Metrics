@@ -24,7 +24,7 @@ Create the following Services
  Service Registry | p-service-registry | standard | discovery-service
  Circuit Breaker Dashboard | p-circuit-breaker-dashboard | standard | circuit-breaker-dashboard
  Database-PWS | cleardb | spark | traderdb 
- Database-PCF | p-mysql | 100mb-dev | traderdb 
+ Database-PCF | p-mysql | 100mb-dev (in Mysql 1.8 the plan is now "100mb") | traderdb 
 
 ** configure the service with -c and the following json
 

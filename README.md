@@ -42,11 +42,18 @@ checkout and build each submodule
 
 Push each µService (update host as necessary either in push command or in manifest as noted above) in the following order
 
-(Note in a PCF environment you will need to execute the following prior to staging, or restaging, in order to connect to Spring Cloud Services)
+(Note in a PCF environment with self-signed certs you will need to execute the following prior to staging, or restaging, in order to connect to Spring Cloud Services)
 
+**SCS 1.1**
 ```
 cf set-env <<appname>> CF_TARGET https://<<apiendpoint.yourdomain.com>>
 ```
+**SCS 1.2**
+```
+cf set-env <<appname>> TRUST_CERTS https://<<apiendpoint.yourdomain.com>>
+```
+
+
 
 1. quotes-service
 2. accounts-service

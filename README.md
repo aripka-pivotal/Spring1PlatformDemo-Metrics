@@ -44,6 +44,11 @@ Push each µService (update host as necessary either in push command or in manif
 
 (Note in a PCF environment with self-signed certs you will need to execute the following prior to staging, or restaging, in order to connect to Spring Cloud Services)
 
+1. quotes-service
+2. accounts-service
+3. portfolio-service
+4. web-ui
+
 **SCS 1.1**
 ```
 cf set-env <<appname>> CF_TARGET https://<<apiendpoint.yourdomain.com>>
@@ -52,13 +57,6 @@ cf set-env <<appname>> CF_TARGET https://<<apiendpoint.yourdomain.com>>
 ```
 cf set-env <<appname>> TRUST_CERTS https://<<apiendpoint.yourdomain.com>>
 ```
-
-
-
-1. quotes-service
-2. accounts-service
-3. portfolio-service
-4. web-ui
 
 ```
 cf p -f build/manifest.yml
